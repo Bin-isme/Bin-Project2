@@ -1,0 +1,43 @@
+.bold{
+    font-weight:bold;
+}
+.poster{
+    margin-top: 55px;
+}
+.product{
+    margin-top: 100px;
+    border:3px solid red;
+    width: 400px;
+    height: 560px;
+}
+.nav-bar{
+    background-color: yellow;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 50px;
+    flex-direction: row;
+    }
+.nav-bar a:hover{background-color: red;}    
+.nabbar{margin: 0px 10px;}
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    justify-content: space-around;
+}
+.End{
+    background-color: silver;
+}
+.footer-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer{
+    width:25%
+}
+.Made{text-align: center;}
