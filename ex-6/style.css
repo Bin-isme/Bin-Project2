@@ -40,4 +40,23 @@
 .footer{
     width:25%
 }
-.Made{text-align: center;}
+.text-center{text-align: center;}
+.product-detail-container{
+    display:flex;
+    margin:55px 0px;
+    padding:0px 5%;
+}
+.product-display{
+    width: 70%;
+}
+.detail-display{
+    width: 30%;
+}
+button{
+    background-color: lightgray;
+    border:1px solid black;
+    border-radius: 7%;
+    font-size: 15px;
+    width: 160px;
+    height: 70px;
+}
