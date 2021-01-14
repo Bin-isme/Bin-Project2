@@ -8,13 +8,13 @@ function signup(){
     let listUsername = [];
     let isAccountExist = false;
     
-    if(listUsers = JSON.parse(localStorage.getItem("listUsers")) != null){
+    if(JSON.parse(localStorage.getItem("listUsers") != null)){
         listUsers = JSON.parse(localStorage.getItem("listUsers"));
     }
-    if(listPassword = JSON.parse(localStorage.getItem("listPassword")) != null){
+    if(JSON.parse(localStorage.getItem("listPassword") != null)){
         listPassword = JSON.parse(localStorage.getItem("listPassword"));
     }
-    if(listUsername = JSON.parse(localStorage.getItem("listUsername")) != null){
+    if(JSON.parse(localStorage.getItem("listUsername") != null)){
         listUsername = JSON.parse(localStorage.getItem("listUsername"));
     }
     
@@ -35,7 +35,7 @@ function signup(){
         if(!isAccountExist){
             listUsers.push(input_email);
             listPassword.push(input_password);
-            listUsername.push(input_username);
+            listUsername.push(input_name);
             
             localStorage.setItem("listUsers",JSON.stringify(listUsers));
             localStorage.setItem("listPassword",JSON.stringify(listPassword));
@@ -51,3 +51,4 @@ function signup(){
         }
     }
 }
+
