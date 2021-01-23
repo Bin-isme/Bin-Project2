@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        let words = ["computer","mouse","pad"];
+        let randomword = words[Math.floor(Math.random()*words.length)]
+        let answerword = []
+        for(let i = 0;i<randomword.length;i++){
+            answerword[i] = "_";
+        }
+        let remainword = randomword.length;
+        
+
+        while(remainword > 0){
+            // alert ("Chiếc nón kì diệu"+ "answerword[i]")
+            // let choose = prompt("Enter a word");
+            // if(choose==answerword.includes(choose)){
+            //     let rep = answerword.replace("_",choose);
+            // }
+            alert(answerword.join(" "))
+            let guess = prompt("Choose a word");
+            let guess1 = guess.length;
+            if(guess == ""){
+                break;
+            }
+            else if(guess1 !=1){
+                alert("Please enter 1 word only");
+            }
+            else{
+                for(i=0;i<randomword.length;i++){
+                    if(randomword[i]== guess){
+                        answerword[i]=guess
+                        randomword[i] --
+                    }
+                }
+            }
+            
+
+            
+        }
+    </script>
+</body>
+</html>

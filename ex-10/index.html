@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="bruh"></p>
+    <script>
+        let bin = [
+            {name:"Iron Man",director:"Jon Favreau",Year:"2008",Actors:" Robert Downey Jr., Gwyneth Paltrow, Terrence Howard"},
+            {name:"Captain America",director:" Joe Johnston",Year:"2011",Actors:"  Chris Evans, Hugo Weaving, Samuel L. Jackson "},
+            {name:"Black Panther",director:"Ryan Coogler",Year:"2018",Actors:"  Chadwick Boseman, Michael B. Jordan, Lupita Nyong'o"}
+        ]
+        console.log(bin[2].name)
+        console.log(bin[0].Actors)
+        console.log(bin[1].Year)
+        let bruh = document.getElementById("bruh");
+        bruh.innerHTML = bin[2].name +" & "+ bin[0].Actors +" & "+ bin[1].Year
+    </script>
+</body>
+</html>
